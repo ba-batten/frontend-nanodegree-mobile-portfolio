@@ -454,14 +454,17 @@ var resizePizzas = function(size) {
     var pList = document.getElementsByClassName("randomPizzaContainer");
     var length = pList.length;
 
-    console.log("Length: " + length);
-    console.log("List " + pList);
-
+    // Separate layout and style changes into separate for loops
     var w = [];
+
     for (var i = 0; i < length; i++) {
       var dx = determineDx(pList[i], size);
-      var newwidth = (pList[i].offsetWidth + dx) + 'px';
-      pList[i].style.width = newwidth;
+      w[i] = (pList[i].offsetWidth + dx) + 'px';
+      console.log(w[i]);
+    }
+
+    for (var j = 0; j < length; j++) {
+      pList[j].style.width = w[j];
     }
   }
 
