@@ -445,18 +445,20 @@ var resizePizzas = function(size) {
 
   // Iterates through pizza elements on the page and changes their widths
   function changePizzaSizes(size) {
+    // Cache randomPizzaContainer to reduce round trips
     var pList = document.getElementsByClassName("randomPizzaContainer");
     var length = pList.length;
 
     var width = [];
 
+    // Separate layout and style changes into separate for loops
     for (var i = 0; i < length; i++) {
       var dx = determineDx(pList[i], size);
       width[i] = (pList[i].offsetWidth + dx) + 'px';
     }
 
     for (var j = 0; j < length; j++) {
-      pList[j].style.width = width[j];      
+      pList[j].style.width = width[j];
     }
   }
 
@@ -506,8 +508,11 @@ function updatePositions() {
   window.performance.mark("mark_start_frame");
 
   var items = document.querySelectorAll('.mover');
+
+  // Cache document.body outside of for loop
+  var bod = document.body;
   for (var i = 0; i < items.length; i++) {
-    var phase = Math.sin((document.body.scrollTop / 1250) + (i % 5));
+    var phase = Math.sin((bod.scrollTop / 1250) + (i % 5));
     items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
   }
 
@@ -528,7 +533,7 @@ window.addEventListener('scroll', updatePositions);
 document.addEventListener('DOMContentLoaded', function() {
   var cols = 8;
   var s = 256;
-  for (var i = 0; i < 20; i++) {
+  for (var i = 0; i < 20; i++) { // Reduce number of pizzas generated in the background
     var elem = document.createElement('img');
     elem.className = 'mover';
     elem.src = "images/pizza.png";
