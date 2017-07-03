@@ -1,6 +1,6 @@
 # Run application
 Option 1: Download or clone repository
-Option 2: Follow links to the Portfolio site [here](file:///C:/Users/ba_ba/OneDrive/Udacity/frontend-nanodegree-mobile-portfolio/index.html "Portfolio Site") and Pizzeria site [here](file:///C:/Users/ba_ba/OneDrive/Udacity/frontend-nanodegree-mobile-portfolio/views/pizza.html "Pizzeria Site")
+Option 2: Follow links to the Portfolio site [here](https://ba-batten.github.io/frontend-nanodegree-mobile-portfolio/) and Pizzeria site [here](https://ba-batten.github.io/frontend-nanodegree-mobile-portfolio/views/pizza.html)
 
 # Optimizations to Portfolio site
 * Reduce image sizes and compress
