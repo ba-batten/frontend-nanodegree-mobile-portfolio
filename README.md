@@ -1,5 +1,5 @@
 # Run application
-Option 1: Download or clone repository
+Option 1: Download or clone repository and open index.html
 Option 2: Follow links to the Portfolio site [here](https://ba-batten.github.io/frontend-nanodegree-mobile-portfolio/) and Pizzeria site [here](https://ba-batten.github.io/frontend-nanodegree-mobile-portfolio/views/pizza.html)
 
 # Optimizations to Portfolio site
