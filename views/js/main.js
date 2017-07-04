@@ -533,7 +533,7 @@ window.addEventListener('scroll', updatePositions);
 document.addEventListener('DOMContentLoaded', function() {
   var cols = 8;
   var s = 256;
-  for (var i = 0; i < 20; i++) { // Reduce number of pizzas generated in the background
+  for (var i = 0; i < 40; i++) { // Reduce number of pizzas generated in the background
     var elem = document.createElement('img');
     elem.className = 'mover';
     elem.src = "images/pizza.png";
