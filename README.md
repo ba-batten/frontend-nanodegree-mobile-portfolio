@@ -5,7 +5,7 @@ Option 2: Follow links to the Portfolio site [here](https://ba-batten.github.io/
 # Optimizations to Portfolio site
 * Reduce image sizes and compress
 * Inline CSS styles
-* Add async attribute to <script> tags
+* Add async attribute to `<script>` tags
 
 # Optimizations to Pizzeria site
 * Reduce number of background pizzas from 200 to 20
