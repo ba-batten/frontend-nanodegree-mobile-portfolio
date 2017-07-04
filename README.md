@@ -13,4 +13,4 @@ Option 2: Follow links to the Portfolio site [here](https://ba-batten.github.io/
 * Cache code within loops that require frequent round trips into variables
 * Replace document.querySelector with more efficient getElementById or getElemementsByClassName where appropriate
 * Reduce image sizes and compress
-* Use <picture> tag and nested <source> tags to load different versions of the pizzeria.jpg image based on viewport size
+* Use `<picture>` tag and nested `<source>` tags to load different versions of the pizzeria.jpg image based on viewport size
